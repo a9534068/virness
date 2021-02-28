@@ -1,6 +1,8 @@
 Docker是一種虛擬容器，聽完之後還是覺得很難懂對吧  看下面圖就知道了
 
 ![image](https://github.com/a9534068/virness/blob/main/Docker.jpg)
+
+
 透過moba連結ssh ip連上後 先移除docker 即使沒有也是確保之後安全
 sudo yum remove docker \
                 docker-client \
