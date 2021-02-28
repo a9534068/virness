@@ -151,6 +151,7 @@ set number
 ------------------------------------------------------------------------------------
 
 建立Line機器人 先安裝compose 如果不安裝這個 你就沒辦法獲取line加入客戶資料
+
 sudo curl -L "https://github.com/docker/compose/releases/download/1.24.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 
 sudo chmod +x /usr/local/bin/docker-compose
@@ -160,6 +161,7 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 docker-compose version
 
 然後我們要開始編輯docker file 在這邊要進去剛剛git clone底下的cd docker_ngrok 如果沒有直接用moba資料夾點lab4
+
 vim $(pwd)/lab4/docker-compose.yml   最後面 空格加上 -region ap  shift+:後x儲存
 
 在lab4底層執行 docker-compose up -d
