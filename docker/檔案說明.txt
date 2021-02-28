@@ -1,0 +1,19 @@
+1.VMware 虛擬檔案
+2.Centos linux其中一個版本
+3.Mobaterm 連線終端機
+4.Docker 在作業平台安裝的技術  可用來安裝各種虛擬檔案 windows linux office  jupyternotebook等等
+5.參考連結 鳥哥 linux
+6.參考連結 彥廷 https://hackmd.io/@suyenting/Sy2E0lEku#_=_
+
+
+三層式架構(3-tier architecture)
+第一層: 使用者介面層(User Show Layer / UI / Presentation layer)
+Web
+例如Flask
+第二層: 商業邏輯層(Business Logic Layer)
+AP(Application)
+例如Python
+第三層: 資料存取層(Data Access Layer)
+DB(Database)
+例如MySQL
+資料庫為公司最核心命脈，所以在最後一層
