@@ -33,6 +33,7 @@ def longTime(i):
     time.sleep(2)
     result=10*30
     print('Result:{}'.format(result))
+    
 if __name__=="__main__":
     start=time.time()
     print('母程序PID: {}'.format(os.getpid()))
@@ -54,5 +55,14 @@ if __name__=="__main__":
     
     end=time.time()
     print("總共花費 {} 秒".format(end-start))
-
+    
 前面提到了我是6核心 因此分別用 單核 4、6核 、8核、12核 去執行產生出下面結果
+![123](https://user-images.githubusercontent.com/78918108/109814570-9f3e4280-7c69-11eb-85f2-71b5ecb82a80.jpg)
+
+
+可以看到4核已經很快了 但是6核應該是這台電腦最快速度   8核心反而開始微微變慢  12核心更慢
+
+![456](https://user-images.githubusercontent.com/78918108/109815280-6eaad880-7c6a-11eb-91dc-d46988103d38.jpg)
+
+當然用Multithread 可以產生更快的速度這是因為 目前硬體有6核6緒  12緒  如果緒越多 影響越大 
+考慮CP值 我們僅需要用6-8核心就綽綽有餘 不需要買更高的 把多餘的錢用在記憶體、顯示卡上即可
